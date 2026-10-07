@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta
+            name="description"
+            content="Orchestre Symphonie : découvrez nos musiciens, nos activités et notre engagement culturel en Haïti."
+        >
+        <title>Orchestre Symphonie</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/frontend.css">
+    </head>
+    <body>
+        <header class="header">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">𝄞</span>
+                <span>
+                    <b>Orchestre <em>Symphonie</em></b>
+                    <small>La musique unit les cœurs</small>
+                </span>
+            </a>
+            <button class="menu-btn" aria-label="Menu">☰</button>
+            <nav>
+                <a class="active" href="index.html">Accueil</a>
+                <a href="index.html#apropos">À propos</a>
+                <a href="pages/membres.html">Membres</a>
+                <a href="pages/evenements.html">Activités</a>
+                <a href="index.html#soutiens">Marraine &amp; Parrain</a>
+                <a href="index.html#galerie">Galerie</a>
+                <a href="pages/contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-gold small" href="pages/contact.html">
+                Nous contacter
+            </a>
+        </header>
+
+        <main>
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <div class="eyebrow">Musique · Passion · Partage</div>
+                    <h1 id="hero-title">
+                        Orchestre<br>
+                        <span style="color:var(--gold)">Symphonie</span>
+                    </h1>
+                    <p>
+                        Plus qu’un orchestre, une famille unie par la même passion : faire vivre
+                        la musique et toucher les âmes.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-gold" href="#apropos">
+                            Découvrir notre orchestre →
+                        </a>
+                        <a class="btn btn-outline" href="pages/evenements.html">
+                            Voir nos activités
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="apropos">
+                <div class="about">
+                    <img
+                        src="assets/images/orchestre.jpeg"
+                        alt="Orchestre Symphonie en concert"
+                    >
+                    <div>
+                        <div class="eyebrow">À propos</div>
+                        <h2>Notre orchestre</h2>
+                        <div class="gold-line" aria-hidden="true"></div>
+                        <p>
+                            Orchestre Symphonie rassemble des musiciens talentueux et engagés
+                            autour d’une même vision : partager des émotions et faire rayonner la
+                            musique dans notre communauté.
+                        </p>
+                        <div class="stats">
+                            <div class="stat">
+                                <strong>Passion</strong>
+                                <span>pour la musique</span>
+                            </div>
+                            <div class="stat">
+                                <strong>Équipe</strong>
+                                <span>et solidarité</span>
+                            </div>
+                            <div class="stat">
+                                <strong>Excellence</strong>
+                                <span>artistique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="members-title">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">L’équipe</div>
+                        <h2 id="members-title">Nos membres</h2>
+                    </div>
+                    <a class="btn btn-outline" href="pages/membres.html">
+                        Voir tous les membres →
+                    </a>
+                </div>
+                <div class="cards members">
+                <article class="card">
+                    <img src="../assets/images/member-1.svg">
+                    <div class="member-info">
+                        <h3>Walclef</h3>
+                        <p>Guitariste</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/images/member-2.svg">
+                    <div class="member-info">
+                        <h3>Mido</h3>
+                        <p>Guitariste</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/images/piano.jpeg">
+                    <div class="member-info">
+                        <h3>Jean Arly</h3>
+                        <p>Pianiste</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/images/member-4.svg">
+                    <div class="member-info">
+                        <h3>Lepe</h3>
+                        <p>Bassiste</p>
+                    </div>
+                </article>
+                 </article>
+                <article class="card">
+                    <img src="../assets/images/member-4.svg">
+                    <div class="member-info">
+                        <h3>Lepe Zato</h3>
+                        <p>Batteur</p>
+                    </div>
+                </article>
+            </div>
+            </section>
+
+            <section class="section" id="activites" aria-labelledby="activities-title">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">Agenda</div>
+                        <h2 id="activities-title">Nos activités</h2>
+                    </div>
+                    <a class="btn btn-outline" href="pages/evenements.html">
+                        Toutes les activités →
+                    </a>
+                </div>
+                <div class="cards" id="events-grid"></div>
+            </section>
+
+            <section class="section" id="soutiens" aria-labelledby="supports-title">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">Notre communauté</div>
+                        <h2 id="supports-title">Marraine &amp; Parrain</h2>
+                    </div>
+                </div>
+                <div class="support-grid">
+                    <div class="support">
+                        <div class="tag">Marraine</div>
+                        <h3>Mme. Claudine Joseph</h3>
+                        <p>
+                            Votre soutien aide notre orchestre à grandir et à donner plus de place
+                            aux jeunes talents.
+                        </p>
+                    </div>
+                    <div class="support">
+                        <div class="tag">Parrain</div>
+                        <h3>M. Jean-Claude Bélizaire</h3>
+                        <p>
+                            La musique est un levier puissant pour le développement culturel et
+                            social.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="galerie" aria-labelledby="gallery-title">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">Nos moments</div>
+                        <h2 id="gallery-title">Galerie</h2>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <img src="assets/images/gallery-1.svg" alt="Concert de l’orchestre">
+                    <img src="assets/images/gallery-2.svg" alt="Musicien jouant du violon">
+                    <img src="assets/images/gallery-3.svg" alt="Musicien au piano">
+                    <img src="assets/images/gallery-4.svg" alt="Groupe musical">
+                    <img src="assets/images/gallery-5.svg" alt="Orchestre en représentation">
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="contact-title">
+                <div class="contact-box">
+                    <div>
+                        <div class="eyebrow">Restons en contact</div>
+                        <h2 id="contact-title">Écrivez-nous</h2>
+                        <p>
+                            Une question, une proposition ou un message ? Nous serons ravis de vous
+                            lire.
+                        </p>
+                        <p class="muted">
+                            📞 +509 0000 0000<br>
+                            ✉️ orchestresymphonie@email.com<br>
+                            📍 Port-au-Prince, Haïti
+                        </p>
+                    </div>
+                    <form
+                        onsubmit="event.preventDefault();alert('Merci ! Votre message est prêt à être connecté à votre service email ou backend.');"
+                    >
+                        <div class="form-grid">
+                            <label>
+                                <span class="sr-only">Votre nom</span>
+                                <input class="input" required placeholder="Votre nom *">
+                            </label>
+                            <label>
+                                <span class="sr-only">Votre email</span>
+                                <input class="input" type="email" required placeholder="Votre email *">
+                            </label>
+                            <label class="full">
+                                <span class="sr-only">Objet</span>
+                                <input class="input full" placeholder="Objet">
+                            </label>
+                            <label class="full">
+                                <span class="sr-only">Votre message</span>
+                                <textarea class="input full" required placeholder="Votre message *"></textarea>
+                            </label>
+                            <button class="btn btn-gold full" type="submit">
+                                Envoyer le message →
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            © 2026 Orchestre Symphonie · La musique unit les cœurs ·
+            <a href="admin/index.html">Administration</a>
+        </footer>
+
+        <script src="js/data.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

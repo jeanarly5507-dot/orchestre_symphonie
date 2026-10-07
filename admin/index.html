@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Administration · Orchestre Symphonie</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">𝄞</span>
+                <span>
+                    <b>Orchestre <em>Symphonie</em></b>
+                    <small>La musique unit les cœurs</small>
+                </span>
+            </a>
+            <button class="menu-btn" aria-label="Menu">☰</button>
+            <nav>
+                <a href="../index.html">Accueil</a>
+                <a href="../index.html#apropos">À propos</a>
+                <a href="../pages/membres.html">Membres</a>
+                <a href="../pages/evenements.html">Activités</a>
+                <a href="../index.html#soutiens">Marraine &amp; Parrain</a>
+                <a href="../index.html#galerie">Galerie</a>
+                <a href="../pages/contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-gold small" href="../pages/contact.html">
+                Nous contacter
+            </a>
+        </header>
+        <main class="admin-wrap">
+            <div id="login" class="admin-box">
+                <div class="eyebrow">Administration</div>
+                <h1>Connexion</h1>
+                <p class="muted">Espace de gestion des événements.</p>
+                <form id="login-form" class="admin-form">
+                    <input id="username" class="input" placeholder="Identifiant" required>
+                    <input id="password" class="input" type="password" placeholder="Mot de passe" required>
+                    <button class="btn btn-gold">Se connecter</button>
+                    <div id="login-error" class="error"></div>
+                </form>
+            </div>
+            <div id="admin-app" hidden>
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">Tableau de bord</div>
+                        <h1>Événements</h1>
+                    </div>
+                    <button id="logout" class="btn btn-outline">Déconnexion</button>
+                </div>
+                <div class="notice">Démo GitHub Pages : les données sont enregistrées dans le navigateur avec localStorage. Pour un vrai admin partagé en ligne, il faudra une base de données.</div>
+                <div class="admin-layout" style="margin-top:20px">
+                    <section class="admin-panel">
+                        <h2>Ajouter</h2>
+                        <form id="event-form" class="admin-form">
+                            <input class="input" name="title" placeholder="Nom de l’événement" required>
+                            <div class="form-grid">
+                                <input class="input" name="date" type="date" required>
+                                <input class="input" name="time" type="time" required>
+                            </div>
+                            <input class="input" name="location" placeholder="Lieu" required>
+                            <input class="input" name="category" placeholder="Catégorie (Concert, Atelier...)" required>
+                            <label class="muted">Image de l’événement
+                                <input class="input" name="imageFile" type="file" accept="image/*">
+                            </label>
+                            <input class="input" name="image" placeholder="Ou chemin image local, ex. assets/images/mon-event.jpg">
+                            <textarea class="input" name="description" placeholder="Courte description" required></textarea>
+                            <textarea class="input" name="details" placeholder="Détails complets"></textarea>
+                            <button class="btn btn-gold">Ajouter l’événement</button>
+                        </form>
+                    </section>
+                    <section class="admin-panel">
+                        <h2>Publiés</h2>
+                        <div id="admin-list"></div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">Orchestre Symphonie · Administration</footer>
+        <script src="../js/data.js"></script>
+        <script src="../js/admin.js"></script>
+    </body>
+</html>

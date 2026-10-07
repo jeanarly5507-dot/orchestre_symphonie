@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Contact · Orchestre Symphonie</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/frontend.css">
+    </head>
+    <body>
+        <header class="header">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">𝄞</span>
+                <span>
+                    <b>Orchestre <em>Symphonie</em></b>
+                    <small>La musique unit les cœurs</small>
+                </span>
+            </a>
+            <button class="menu-btn" aria-label="Menu">☰</button>
+            <nav>
+                <a href="../index.html">Accueil</a>
+                <a href="../index.html#apropos">À propos</a>
+                <a href="membres.html">Membres</a>
+                <a href="evenements.html">Activités</a>
+                <a href="../index.html#soutiens">Marraine &amp; Parrain</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a href="../index.html#galerie">Galerie</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn btn-gold small" href="contact.html">
+                Nous contacter
+            </a>
+        </header>
+        <main class="detail-wrap">
+            <div class="contact-box">
+                <div>
+                    <div class="eyebrow">Contact</div>
+                    <h1>Écrivez-nous</h1>
+                    <p>
+                        Pour une réservation, un partenariat, une invitation ou toute autre question,
+                        contactez-nous.
+                    </p>
+                    <p class="muted">
+                        📞 +509 0000 0000<br>
+                        ✉️ orchestresymphonie@email.com<br>
+                        📍 Port-au-Prince, Haïti
+                    </p>
+                </div>
+                <form
+                    onsubmit="event.preventDefault();alert('Message envoyé (démo). Connectez ce formulaire à votre backend ou service email.');"
+                >
+                    <div class="form-grid">
+                        <input class="input" required placeholder="Votre nom *">
+                        <input class="input" type="email" required placeholder="Votre email *">
+                        <input class="input full" placeholder="Objet">
+                        <textarea class="input full" required placeholder="Votre message *"></textarea>
+                        <button class="btn btn-gold full">
+                            Envoyer le message →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">© 2026 Orchestre Symphonie</footer>
+        <script src="../js/data.js"></script>
+        <script src="../js/app.js"></script>
+    </body>
+</html>
+
